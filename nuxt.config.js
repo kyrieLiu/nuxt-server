@@ -15,9 +15,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  router: {
-    base: '/life/'
-  },
+  // router: {
+  //   base: '/life/'
+  // },
   /*
   ** Customize the progress-bar color
   */
