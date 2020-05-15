@@ -1,12 +1,13 @@
 const Koa = require('koa')
 const consola = require('consola')
+const cors = require('koa-cors')
 const { Nuxt, Builder } = require('nuxt')
 
 const app = new Koa()
 
 const config = require('../nuxt.config.js')
 const users = require('./users')
-
+app.use(cors())
 // Import and Set Nuxt.js options
 config.dev = app.env !== 'production'
 
